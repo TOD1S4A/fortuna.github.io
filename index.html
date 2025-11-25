@@ -1,1 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio BTS SIO SISR TODISOA Fortunat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* RESET SIMPLE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 260px;
+            background-color: #1b1b1b;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+
+        .sidebar h1 {
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar .subtitle {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #c3c3c3;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            list-style: none;
+            width: 100%;
+        }
+
+        .menu li {
+            margin: 10px 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            display: block;
+            padding: 6px 0;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .menu a:hover {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .menu .active {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        /* CONTENU PRINCIPAL */
+        .main-content {
+            margin-left: 260px; /* même largeur que la sidebar */
+            padding: 40px 50px;
+            flex: 1;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        section h3 {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+
+        p {
+            margin: 6px 0 10px 0;
+            line-height: 1.6;
+            color: #d0d0d0;
+        }
+
+        .highlight {
+            color: #64ffda;
+            font-weight: bold;
+        }
+
+        .tag {
+            display: inline-block;
+            border: 1px solid #555;
+            border-radius: 20px;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            margin: 3px 3px 0 0;
+        }
+
+        .bloc {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin-top: 10px;
+        }
+
+        /* CONTACT */
+        .contact-links a {
+            color: #64ffda;
+            text-decoration: none;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE SIMPLE */
+        @media (max-width: 800px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                position: relative;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px 15px 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <h1>FORTUNAT</h1>
+        <div class="subtitle">
+            Étudiant – BTS SIO<br>
+            Option SISR
+        </div>
+        <ul class="menu">
+            <li><a href="#accueil" class="active">ACCUEIL</a></li>
+            <li><a href="#missions">MISSIONS</a></li>
+            <li><a href="#e5">EPREUVE E5</a></li>
+            <li><a href="#e6-systeme">E6 SYSTEME</a></li>
+            <li><a href="#e6-reseau">E6 RESEAU</a></li>
+            <li><a href="#veille">VEILLE TECHNOLOGIQUE</a></li>
+            <li><a href="#bts">BTS SIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </aside>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="main-content">
+
+        <!-- ACCUEIL -->
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>
+                Bonjour, je m’appelle <span class="highlight">Todisoa Fortunat Matthieius</span>, 
+                étudiant en <span class="highlight">BTS SIO option SISR</span>.
+                Ce portfolio présente mon parcours, mes missions en entreprise
+                et mes projets techniques pour les épreuves <strong>E4</strong>, <strong>E5</strong> et <strong>E6</strong>.
+            </p>
+            <div class="bloc">
+                <h3>Projet professionnel</h3>
+                <p>
+                    À court terme : valider mon BTS SIO SISR et continuer à renforcer mes compétences
+                    en systèmes et réseaux.<br>
+                    À moyen terme : évoluer vers un poste de <strong>technicien systèmes & réseaux</strong>,
+                    puis <strong>administrateur systèmes & réseaux </strong>.
+                      <br>
+                    À l'avenir    : faire partie des <strong> bleu team</strong>.
+                    
+                  
+                </p>
+                <h3>Points forts</h3>
+                <p>
+                    Epistemophile, intérêt pour la cybersécurité, la virtualisation
+                    et l’administration de serveurs Windows / Linux.
+                </p>
+            </div>
+        </section>
+
+        <!-- MISSIONS -->
+        <section id="missions">
+            <h2>Missions</h2>
+            <p>
+                Cette section présentera mes missions réalisées en stage / alternance : support utilisateurs,
+                installation de postes, participation à des projets systèmes et réseaux, etc.
+            </p>
+            <p>
+                Exemples de missions possibles :
+            </p>
+            <div class="bloc">
+                <h3>Support utilisateur & prise en main à distance</h3>
+                <p>
+                    • Résolution d’incidents de premier niveau (bureautique, imprimantes, accès réseau).<br>
+                    • Utilisation d’outils de prise en main à distance (AnyDesk,Googlemeet, …).<br>
+                    • Création de tickets dans un outil de gestion (GLPI, …).
+                    • Création de tickets dans un outil de gestion (GLPI, …).
+                </p>
+            </div>
+        </section>
+
+        <!-- E5 -->
+        <section id="e5">
+            <h2>Épreuve E5 – Projets techniques</h2>
+            <p>
+                L’épreuve E5 évalue ma capacité à <strong>mettre à disposition des services informatiques</strong> 
+                et à en assurer le support. Je présente principalement deux projets :
+            </p>
+
+            <div class="bloc">
+                <h3>Projet Système – Serveur d’identification centralisé (Active Directory)</h3>
+                <p>
+                    Mise en place d’un domaine Active Directory avec gestion des comptes, groupes
+                    et stratégies de groupe (GPO) pour centraliser l’authentification des utilisateurs.
+                </p>
+                <p>
+                    <span class="tag">Windows Server</span>
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">GPO</span>
+                    <span class="tag">DNS / DHCP</span>
+                </p>
+            </div>
+
+            <div class="bloc">
+                <h3>Projet Réseau – Infrastructure segmentée avec VLAN & routage</h3>
+                <p>
+                    Conception d’une topologie avec plusieurs VLAN (services différents), 
+                    routage inter-VLAN et plan d’adressage structuré.
+                </p>
+                <p>
+                    <span class="tag">Cisco / Packet Tracer</span>
+                    <span class="tag">VLAN</span>
+                    <span class="tag">VLSM</span>
+                    <span class="tag">Routage</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- E6 SYSTEME -->
+        <section id="e6-systeme">
+            <h2>E6 Système</h2>
+            <p>
+                Cette partie détaillera les activités liées à l’administration de systèmes :
+                installation, configuration et sécurisation de services sous Windows Server et Linux.
+            </p>
+        </section>
+
+        <!-- E6 RESEAU -->
+        <section id="e6-reseau">
+            <h2>E6 Réseau</h2>
+            <p>
+                Cette partie présentera les travaux réalisés autour du réseau :
+                configuration de switchs, routeurs, VLAN, routage, NAT, etc.
+            </p>
+        </section>
+
+        <!-- VEILLE -->
+        <section id="veille">
+            <h2>Veille technologique</h2>
+            <p>
+                Je réalise une veille régulière sur les sujets liés aux systèmes, réseaux et à la cybersécurité.
+                Cette section reprendra les principaux thèmes et les articles que j’ai étudiés.
+            </p>
+        </section>
+
+        <!-- BTS SIO -->
+        <section id="bts">
+            <h2>BTS SIO – Option SISR</h2>
+            <p>
+                Le BTS SIO (Services Informatiques aux Organisations) forme des techniciens capables de
+                déployer, administrer et sécuriser des infrastructures réseaux et systèmes.
+                L’option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) est orientée vers :
+            </p>
+            <p>
+                • L’installation et la configuration de serveurs et services réseaux<br>
+                • La gestion des droits d’accès et des ressources<br>
+                • La sécurité et la supervision du réseau<br>
+                • La virtualisation et le déploiement de machines
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter pour toute information complémentaire :</p>
+            <p class="contact-links">
+                Email : <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a><br>
+                GitHub : <a href="https://github.com/TOD1S4A" target="_blank">github.com/TOD1S4A</a>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
 
