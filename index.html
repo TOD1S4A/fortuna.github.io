@@ -519,13 +519,185 @@
         </section>
 
         <!-- VEILLE -->
-        <section id="veille">
-            <h2>Veille technologique</h2>
-            <p>
-                Je réalise une veille régulière sur les sujets liés aux systèmes, réseaux et à la cybersécurité.
-                Cette section reprendra les principaux thèmes et les articles que j’ai étudiés.
-            </p>
-        </section>
+       <section id="veille">
+    <h2>Veille technologique</h2>
+    <p>
+        Dans le cadre de ma formation en <strong>BTS SIO SISR</strong>, je réalise une veille continue 
+        sur les technologies clés liées aux systèmes, réseaux et à la cybersécurité.
+        Voici les 3 sujets sur lesquels je me suis concentré en 2024–2025.
+    </p>
+
+    <!-- VEILLE 1 -->
+    <div class="bloc">
+        <h3>🔵 Veille 1 – Conteneurisation (Docker, Kubernetes) : orchestration & sécurité</h3>
+
+        <h4>1. Définition</h4>
+        <p>
+            La conteneurisation permet d’exécuter des applications dans des environnements isolés appelés
+            <strong>conteneurs</strong>.<br>
+            • <strong>Docker</strong> : création et gestion des conteneurs.<br>
+            • <strong>Kubernetes</strong> : orchestration automatisée de milliers de conteneurs.
+        </p>
+
+        <h4>2. Enjeux 2024–2025</h4>
+        <p>
+            • Explosion du cloud et des applications scalables.<br>
+            • Besoin de déploiements rapides et reproductibles.<br>
+            • Montée des cyberattaques ciblant les conteneurs.<br>
+            • Standardisation des environnements DevOps.
+        </p>
+
+        <h4>3. Problématiques</h4>
+        <p>
+            • Images Docker vulnérables.<br>
+            • Mauvaise isolation → risques de fuite réseau.<br>
+            • Complexité de la sécurité dans Kubernetes.<br>
+            • Permissions trop élevées dans les conteneurs.
+        </p>
+
+        <h4>4. Tendances / Solutions</h4>
+        <p>
+            • <strong>DevSecOps</strong> : sécurité intégrée au pipeline CI/CD.<br>
+            • Scanners d’images (Trivy, Clair).<br>
+            • <strong>OPA Gatekeeper</strong> : enforcement automatique des politiques.<br>
+            • Zero-Trust pour Kubernetes (RBAC avancé, Network Policies).<br>
+            • Conteneurs <strong>rootless</strong>.
+        </p>
+
+        <h4>5. Intérêt en SISR</h4>
+        <p>
+            • Déployer des services rapidement (Nginx, DB, API).<br>
+            • Comprendre l’infrastructure cloud moderne.<br>
+            • Monter en compétences DevOps / DevSecOps.<br>
+            • Préparation au monde professionnel.
+        </p>
+
+        <h4>6. Sources</h4>
+        <p>
+            • Documentation Docker & Kubernetes.<br>
+            • CNCF Security Best Practices.<br>
+            • Trend Micro – Container Threat Report 2024.
+        </p>
+    </div>
+
+    <!-- VEILLE 2 -->
+    <div class="bloc" style="margin-top:20px;">
+        <h3>🟣 Veille 2 – Virtualisation (VMware / Hyper-V) : évolutions & bonnes pratiques</h3>
+
+        <h4>1. Définition</h4>
+        <p>
+            La virtualisation consiste à exécuter plusieurs systèmes sur un même serveur physique via un 
+            <strong>hyperviseur</strong> (ESXi, Hyper-V).
+        </p>
+
+        <h4>2. Enjeux 2024–2025</h4>
+        <p>
+            • Cyberattaques sur les hyperviseurs.<br>
+            • Hausse des coûts VMware (Broadcom).<br>
+            • Migration vers Hyper-V, Proxmox ou solutions cloud.<br>
+            • Besoin de haute disponibilité (cluster / HA).
+        </p>
+
+        <h4>3. Problématiques</h4>
+        <p>
+            • Ransomware ESXiArgs (2023–2024).<br>
+            • Mauvaise segmentation réseau.<br>
+            • Sauvegardes insuffisantes ou mal configurées.
+        </p>
+
+        <h4>4. Tendances / Solutions</h4>
+        <p>
+            • Segmentation des VLAN autour des hyperviseurs.<br>
+            • Sauvegarde Veeam / Nakivo.<br>
+            • Monitoring via vCenter ou Admin Center.<br>
+            • Adoption de Proxmox en open-source.<br>
+            • Chiffrement des VM.
+        </p>
+
+        <h4>5. Intérêt en SISR</h4>
+        <p>
+            • Base indispensable pour comprendre un SI moderne.<br>
+            • Nécessaire pour AD, DNS, Linux, pare-feu.<br>
+            • Préparation certification VMware ou Windows Server.<br>
+            • Comprendre le fonctionnement du clustering.
+        </p>
+
+        <h4>6. Sources</h4>
+        <p>
+            • VMware Broadcom – Roadmap 2024–2025.<br>
+            • Hyper-V Best Practices.<br>
+            • ANSSI – Recommandations Virtualisation.
+        </p>
+    </div>
+
+    <!-- VEILLE 3 -->
+    <div class="bloc" style="margin-top:20px;">
+        <h3>🟢 Veille 3 – Modèle Zero Trust + SASE : sécurisation moderne des réseaux</h3>
+
+        <h4>1. Définition</h4>
+        <p>
+            <strong>Zero Trust</strong> : « Ne jamais faire confiance, toujours vérifier. »<br>
+            <strong>SASE</strong> : convergence sécurité + réseau dans le cloud (ZTNA, CASB, FWaaS…)
+        </p>
+
+        <h4>2. Enjeux 2024–2025</h4>
+        <p>
+            • Explosion du télétravail.<br>
+            • Fin du modèle sécurité périmétrique.<br>
+            • Augmentation des cyberattaques.<br>
+            • Besoin d’un contrôle continu des accès.
+        </p>
+
+        <h4>3. Problématiques</h4>
+        <p>
+            • VPN classiques contournables.<br>
+            • Appareils personnels non sécurisés.<br>
+            • Mauvaise gestion des droits IAM.<br>
+            • Manque de visibilité sur les accès.
+        </p>
+
+        <h4>4. Tendances / Solutions</h4>
+        <p>
+            • MFA obligatoire.<br>
+            • ZTNA → remplacement des VPN.<br>
+            • Micro-segmentation réseau.<br>
+            • Solutions SASE (Zscaler, Cisco Umbrella, Cloudflare One).<br>
+            • IAM + contrôle d’accès basé sur l’identité.
+        </p>
+
+        <h4>5. Intérêt en SISR</h4>
+        <p>
+            • Modèle fondamental dans les entreprises modernes.<br>
+            • Très demandé en cybersécurité.<br>
+            • Applicable en TP : VLAN + firewall + MFA.<br>
+            • Compréhension avancée de la sécurité Zero-Trust.
+        </p>
+
+        <h4>6. Sources</h4>
+        <p>
+            • ANSSI – Recommandations ZTNA.<br>
+            • Gartner – SASE Trends 2024.<br>
+            • Cisco Zero-Trust Whitepaper.
+        </p>
+    </div>
+
+    <!-- OUTILS DE VEILLE -->
+    <div class="bloc" style="margin-top:25px;">
+        <h3>🛠️ Outils utilisés pour ma veille</h3>
+        <p>Pour rester informé régulièrement, j’utilise plusieurs outils de veille :</p>
+
+        <p>
+            • <strong>Google Alerts</strong> → Notifications automatiques sur Docker, Kubernetes, Zero Trust.<br>
+            • <strong>Feedly</strong> → Suivi RSS (ANSSI, RedHat, Kubernetes.io, VMware Blog).<br>
+            • <strong>LinkedIn Tech</strong> → Actualités des ingénieurs sécurité & DevOps.<br>
+            • <strong>CNCF Landscape</strong> → Évolutions open-source du cloud.<br>
+            • <strong>Github Trending</strong> → Nouveaux projets Docker/Kubernetes.<br>
+            • <strong>Cyberveille ANSSI</strong> → Alertes vulnérabilités hyperviseurs & réseaux.
+        </p>
+    </div>
+
+</section>
+
 
         <!-- BTS SIO -->
         <section id="bts">
