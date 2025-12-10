@@ -225,6 +225,8 @@
 
     </style>
 </head>
+
+
 <body>
 
     <!-- MENU LATERAL -->
@@ -899,7 +901,28 @@
 
 
     </main>
+    <script>
+    document.querySelectorAll('.menu a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Retire active
+            document.querySelectorAll('.menu a').forEach(a => a.classList.remove('active'));
+            this.classList.add('active');
 
+            // Cacher toutes les sections
+            document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+
+            // Afficher la bonne section
+            const target = this.getAttribute('href');
+            document.querySelector(target).style.display = 'block';
+        });
+    });
+
+    // Au début : afficher seulement ACCUEIL
+    document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+    document.querySelector('#accueil').style.display = 'block';
+</script>
 </body>
 </html>
 
