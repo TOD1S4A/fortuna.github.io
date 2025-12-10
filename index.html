@@ -223,6 +223,19 @@
 }
 
 
+.page-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.page-section.active-section {
+    display: block;
+    opacity: 1;
+}
+
+
+
     </style>
 </head>
 
@@ -907,28 +920,37 @@
 
 
     </main>
-    <script>
-    document.querySelectorAll('.menu a').forEach(link => {
+<script>
+    const menuLinks = document.querySelectorAll('.menu a');
+    const sections = document.querySelectorAll('.page-section');
+
+    function showSection(id) {
+        sections.forEach(sec => {
+            sec.classList.remove('active-section');
+        });
+        const target = document.querySelector(id);
+        if (target) {
+            target.classList.add('active-section');
+        }
+    }
+
+    menuLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            
-            // Retire active
-            document.querySelectorAll('.menu a').forEach(a => a.classList.remove('active'));
+
+            // gestion de l'état actif du menu
+            menuLinks.forEach(a => a.classList.remove('active'));
             this.classList.add('active');
 
-            // Cacher toutes les sections
-            document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
-
-            // Afficher la bonne section
-            const target = this.getAttribute('href');
-            document.querySelector(target).style.display = 'block';
+            const targetId = this.getAttribute('href'); // ex: #missions
+            showSection(targetId);
         });
     });
 
-    // Au début : afficher seulement ACCUEIL
-    document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
-    document.querySelector('#accueil').style.display = 'block';
+    // Au chargement : n’afficher que Accueil
+    showSection('#accueil');
 </script>
+
 </body>
 </html>
 
