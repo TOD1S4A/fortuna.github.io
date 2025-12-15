@@ -254,6 +254,39 @@ h2,h3,h4{ color:#0b0b0b; }
 .btn:hover{ background: rgba(0,0,0,0.22); }
 
 
+        .sidebar h1 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+
+    /* visibilité */
+    color: #ffffff;
+
+    /* effet élégant */
+    background: linear-gradient(90deg, #64ffda, #6bbcff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* animation douce */
+    animation: glowText 4s ease-in-out infinite;
+}
+
+/* animation légère (pro) */
+@keyframes glowText {
+    0% {
+        filter: drop-shadow(0 0 2px rgba(100,255,218,0.4));
+    }
+    50% {
+        filter: drop-shadow(0 0 6px rgba(107,188,255,0.6));
+    }
+    100% {
+        filter: drop-shadow(0 0 2px rgba(100,255,218,0.4));
+    }
+}
+
+
+
 </style>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
